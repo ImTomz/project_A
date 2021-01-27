@@ -6,10 +6,11 @@ public class CameraFollow : MonoBehaviour
 {
 
     public Camera playerCamera;
-    public GameObject player;
-    public float cameraOffset = -5f;
+    public Transform player;
+    public Vector3 cameraOffset;
 
-    private Vector2 playerPosition;
+    [Range(2,10)]
+    public float smoothFactor;
  
 
     // Start is called before the first frame update
@@ -19,9 +20,16 @@ public class CameraFollow : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        playerPosition = new Vector2(player.transform.position.x,player.transform.position.y);
-        playerCamera.transform.position = new Vector3(player.transform.position.x , player.transform.position.y, cameraOffset);
+        Follow();
+    }
+
+    void Follow()
+    {
+        Vector3 playerPosition = player.position + cameraOffset;
+        Vector3 smoothPosition = Vector3.Lerp(transform.position, playerPosition, smoothFactor * Time.fixedDeltaTime);
+
+        transform.position = smoothPosition;
     }
 }
