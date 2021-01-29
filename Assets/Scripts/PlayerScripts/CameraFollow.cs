@@ -9,7 +9,7 @@ public class CameraFollow : MonoBehaviour
     public Transform player;
     public Vector3 cameraOffset;
 
-    [Range(2,10)]
+    [Range(1,10)]
     public float smoothFactor;
  
 
