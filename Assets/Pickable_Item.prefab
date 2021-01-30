@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6870592323625369522}
   - component: {fileID: 7891518496175968452}
   - component: {fileID: 5209354101879876576}
+  - component: {fileID: -2383959643842103133}
   m_Layer: 0
   m_Name: Pickable_Item
   m_TagString: Untagged
@@ -96,3 +97,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemButton: {fileID: 409530336707570683, guid: d63c0cdaeaeb848b38822edbc8f4735b, type: 3}
+--- !u!58 &-2383959643842103133
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104382980859542252}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.1324591, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.3675409
