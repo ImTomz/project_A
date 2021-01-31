@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5209354101879876576}
   - component: {fileID: -2383959643842103133}
   m_Layer: 0
-  m_Name: Pickable_Item
+  m_Name: Coin_Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73dc437d39477429a930ddc35539a809, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemButton: {fileID: 6482015863908847711, guid: cde7f8843a4e3634d838e45d950f8d88, type: 3}
+  itemButton: {fileID: 6482015863908847711, guid: 5b45085f88ade4666836b6f229404abc, type: 3}
 --- !u!58 &-2383959643842103133
 CircleCollider2D:
   m_ObjectHideFlags: 0
